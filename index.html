@@ -33,7 +33,7 @@
 
 <body>
     <!--   選單列-->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+     <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <div class="container">
             <a href="index.html" class="navbar-brand  "><img src="img/Shop-icon.png" width="40" height="40" alt="#" class="mr-3 ">Joe's Shop</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,9 +66,9 @@
                                 <span class="badge  badge-danger">2</span>
                             </i>
                         </button>
-                        <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" id="navbar-cart">
-                            <div class="px-3 py-3 ">
-                                <table class="table">
+                        <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+                             <div class="px-3 py-3 ">
+                                
                                     <table class="table table-hover table-sm">
                                         <thead>
                                         <tr>
@@ -78,23 +78,23 @@
                                     </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row"><a href="#"><i class="fa fa-trash"></i></a></th>
-                                                <td > 金牌西裝</td>
-                                                <td> 一件</td>
-                                                <td>$699NT</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><a href="#"><i class="fa fa-trash"></i></a></th>
+                                                <th scope="row"><a href="#" data-toggle="modal" data-target="#deleteModal" data-backdrop="static" data-title="金牌西裝"><i class="fa fa-trash" ></i></a></th>
                                                 <td> 金牌西裝</td>
                                                 <td> 一件</td>
                                                 <td>$699NT</td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#" data-toggle="modal" data-target="#deleteModal" data-backdrop="static" data-title="冠軍服飾"><i class="fa fa-trash" ></i></a></th>
+                                                <td> 冠軍服飾</td>
+                                                <td> 一件</td>
+                                                <td>$899NT</td>
+                                            </tr>
                                             <tr >
-                                                <td colspan="4"><a href="#" class="btn btn-primary btn-block mt-2"> 結帳去</a></td>
+                                                <td colspan="4"><a href="bootstrap-shop-product.html" class="btn btn-primary btn-block mt-2"> 結帳去</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </table>
+                            
                             </div>
                         </div>
                     </li>
@@ -329,7 +329,7 @@
         </div>
     </footer>
 
-    <!-- 登入Modal -->
+   <!--  登入-->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -409,12 +409,10 @@
 
 
 
-    <script>
-      $(document).ready(function(){
-    
-      
+  <script>
 
-        (function() {
+    
+      (function() {
             'use strict';
             window.addEventListener('load', function() {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -431,6 +429,8 @@
                 });
             }, false);
         })();
+
+        
 
     </script>
 </body>
