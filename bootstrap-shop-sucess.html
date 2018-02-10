@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Joe's Shop</title>
+    <link rel="stylesheet" href="boostrap-shop-item.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-shop-product.css">
+    <link rel="stylesheet" href="bootstrap-shop-product.css"
+    >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12 mt-4 mb-3 text-center text-secondary">
+                <h1 class="display-5">Joe's 賣場結帳</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between mb-3">
+
+            
+            <div class="col-12">
+                <div class="alert alert-success  text-secondary text-center alert-radius" role="alert">
+                    3.完成結帳
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="m-auto col-md-8 col-12">
+                <div class="alert alert-secondary text-center " role="alert">
+                    <strong>購買資訊</strong>
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover table-sm mb-5">
+                                <thead>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="border-top-0 text-center">以選擇商品</th>
+                                            <th class="border-top-0">數量</th>
+                                            <th class="border-top-0 text-right">價格</th>
+                                        </tr>
+
+                                    </thead>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th scope="row"><a href="#" data-toggle="modal" data-target="#deleteModal" data-backdrop="static" data-title="金牌西裝"></a>
+                                            <img src="img/product-banner-2.jpg" width="100" height="100" alt="">
+                                        </th>
+                                        <td> 金牌西裝</td>
+                                        <td> 一件</td>
+                                        <td class="text-right">$699NT</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><a href="#" data-toggle="modal" data-target="#deleteModal" data-backdrop="static" data-title="冠軍服飾"></a><img src="img/product-banner.jpg" class="img-fluid" width="100" height="100" alt=""></th>
+                                        <td class="text-left"> 冠軍服飾</td>
+                                        <td> 一件</td>
+                                        <td class="text-right">$899NT</td>
+                                    </tr>
+
+                                    <th colspan="2"></th>
+                                    <th colspan="">運費</th>
+                                    <td class="text-right">$60NT</td>
+                                </tbody>
+                                <tfoot>
+                                    <th colspan="2"></th>
+                                    <th colspan="">合計</th>
+                                    <td class="text-right"><strong>$1658NT</strong></td>
+                                </tfoot>
+                            </table>
+                            <div class="row mt-4 mb-4">
+            <div class="m-auto col-md-8 col-12">
+                <div class="alert alert-secondary text-center " role="alert">
+                    <strong>訂購人資訊</strong>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <table class="table table-hover table-sm">
+                                
+                                <tbody>
+
+                                    <tr>
+                                        <td ><strong>訂購人姓名</strong></td>
+                                        <td class="text-right">Joe's</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>E-mail</strong></td>
+                                        <td class="text-right">yes123456@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>訂購人地址</strong></td>
+                                        <td class="text-right">台北市信義區象山捷運站</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><strong>連絡電話</strong></td>
+                                        <td class="text-right">0912334645</td>
+                                    </tr>
+                                    
+                                </tbody>
+                                
+                            </table>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="py-5 bg-light border-top mt-5">
+        <div class="container d-flex  justify-content-between">
+            <div>© 2018 Joe's shop 。僅供個人練習使用無任何商業及利益行為</div>
+            <div id="icons">
+                <ol>
+
+                    <li class="pr-3 pl-2 "><a href="https://github.com/joechen0730/Resume" class=""><i class="fa fa-github " aria-hidden="true"></i></a></li>
+                    <li class="pr-3 pl-2 border-right"><a href="https://github.com/joechen0730/Resume"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li class="pr-3 pl-2 border-right"><a href="https://github.com/joechen0730/Resume"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
